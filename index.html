@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>
+	90's Hip Hop Trivia Game
+	</title>
+</head>
+
+<body>
+<!-- HEADER -->
+<div class="jumbotron">
+  <h1>90's Hip Hop Trivia</h1>
+  <p>Once you click the START button you only have 30 seconds</p>
+
+  <!-- Start Button -->
+  <div>
+  <button id="startHere" style="display: block; margin: 0 auto;">START HERE</button>
+  </div>
+<!--<p><a class="btn btn-primary btn-lg" >Start Here</a></p>
+</div>-->
+
+		<!-- TIMER COUNDOWN BEGINS, QUESTIONS, AND ANSWER OPTIONS ARE REVEALED -->
+		<div class="container">
+		<p>TIME REMAINING <span id="count"></span> seconds!</p></div>
+		<br>
+
+		<!--<h3>Time Remaining:</h3> <div id="display">.00</div>-->
+		
+			<div align="center"<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+			<li><div class="question">Complete these lyrics: "Now in my younger days I used to sport a shag / When I went to school____________"</div></li>
+			<input id="answer" type="radio" name="group1" value="wrong"> I always had lots of swag<br>
+			<input id="answer" type="radio" name="group1" value="wrong"> I flunked all my exams<br>
+			<input id="answer" type="radio" name="group1" value="correct"> I carried a lunch in a bag<br>
+			<input id="answer" type="radio" name="group1" value="wrong"> I didn't have a backpack<hr>
+
+			<li><div class="question">Which member was not a member of the Wu-Tang Clan?</div></li>
+			<input id="answer" type="radio" name="group2" value="wrong"> Method Man<br>
+			<input id="answer" type="radio" name="group2" value="wrong"> ODB<br>
+			<input id="answer" type="radio" name="group2" value="wrongt"> U-God <br>
+			<input id="answer" type="radio" name="group2" value="correct"> Royce Da 5'9'<hr>
+
+
+			<li><div class="question">What was the name of Fresh Prince's DJ?</div></li>
+			<input id="answer" type="radio" name="group3" value="wrong"> DJ Duke of Earl<br>
+			<input id="answer" type="radio" name="group3" value="correct"> DJ Jazzy Jeff<br>
+			<input id="answer" type="radio" name="group3" value="wrong"> DJ Funk Masterflex<br>
+			<input id="answer" type="radio" name="group3" value="wrong"> DJ Mustard<hr>
+
+
+			<li><div class="question">Name the singer who was married to the Notorious B.I.G.</div></li>
+			<input id="answer" type="radio" name="group4" value="correct"> Faith Evans<br>
+			<input id="answer" type="radio" name="group4" value="wrong"> Mary J Blige<br>
+			<input id="answer" type="radio" name="group4" value="wrong"> Charli Baltimore<br>
+			<input id="answer" type="radio" name="group4" value="wrong"> Lil' Kim<hr>
+
+
+			<li><div class="question">Which Nas song did Jay-Z sample for his song "Dead Presidents?"</div></li>
+			<input id="answer" type="radio" name="group5" value="correct"> "The World Is Yours"<br>
+			<input id="answer" type="radio" name="group5" value="wrong"> "If I Ruled The World"<br>
+			<input id="answer" type="radio" name="group5" value="wrong"> "Made U Look"<br>
+			<input id="answer" type="radio" name="group5" value="wrong"> "One Mic"<hr>
+
+			<li><div class="question">Which rap group's song "Fight the Power" was featured in Spike Lee's film, "Do The Right Thing?"</div></li>
+			<input id="answer" type="radio" name="group6" value="wrong"> Outkast<br>
+			<input id="answer" type="radio" name="group6" value="wrong"> NWA<br>
+			<input id="answer" type="radio" name="group6" value="wrong"> Wu-Tang Clan<br>
+			<input id="answer" type="radio" name="group6" value="correct"> Public Enemy<hr>
+
+			<li><div class="question">Phife Dawg, Q-Tip, and Ali Shaheed Muhammad were the members of what rap group?</div></li>
+			<input id="answer" type="radio" name="group7" value="wrong"> De La Soul<br>
+			<input id="answer" type="radio" name="group7" value="wrong"> A Tribe Called Quest<br>
+			<input id="answer" type="radio" name="group7" value="correct"> Arrested Development<br>
+			<input id="answer" type="radio" name="group7" value="wrong"> Digital Underground<hr>
+
+			<button class="submit" onclick="return handleClick();" "clearInterval(" type="submit">Submit</button>
+
+			</form>
+			</div>
+
+
+</div>
+
+
+		<!--<p><a class="btn btn-primary btn-lg" href="#" role="">SUBMIT</a></p>
+		</div>
+	</div>-->
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
+
+</body>
+</html>
